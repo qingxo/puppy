@@ -4,50 +4,40 @@ import { Controller, Get } from '@nestjs/common';
 export class CommonController {
   menu = [
     {
-      name: '主页',
-      icon: 'anticon-menu',
-      id: 0,
-      children: [
-        {
-          id: 1,
-          icon: 'anticon-user',
-          name: '功能一',
-          title: '',
-          url: '/admin/wel',
-        },
-        {
-          id: 3,
-          icon: 'anticon-setting',
-          name: '功能二',
-          title: '功能二',
-          url: '/admin/test',
-        },
-        {
-          id: 43,
-          icon: 'internationalization',
-          name: '功能三',
-          title: '功能三',
-          url: '/admin/test2',
-        },
-      ],
+      name: '企业管理',
+      icon: 'anticon-qiye',
+      url: '/admin/wel',
+      id: 1,
     },
     {
       icon: 'anticon-user',
-      name: '会员管理',
+      name: '用户管理',
       url: '/admin/result',
       id: 20,
     },
     {
-      icon: 'anticon-testing',
-      name: '员工管理',
+      icon: 'anticon-api',
+      name: 'API账号管理',
       url: '/admin/result',
       id: 21,
     },
     {
-      icon: 'anticon-fix',
-      name: '设置',
+      icon: 'anticon-console',
+      name: '引擎脚本管理',
       url: '/admin/result',
       id: 22,
+    },
+    {
+      icon: 'anticon-pipe',
+      name: '接口管理',
+      url: '/admin/result',
+      id: 23,
+    },
+    {
+      icon: 'anticon-pipe-manage',
+      name: '接口配置',
+      url: '/admin/result',
+      id: 24,
     },
   ];
   loginInfo = {
